@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const BurgerIngredients = () => {
-    return (
-        <div>
-
-        </div>
-    );
+const BurgerIngredients = (data) => {
+  return (
+    <div>
+      {data.map((item) => {
+        return <p>{item.name}</p>;
+      })}
+    </div>
+  );
 };
 
 export default BurgerIngredients;
