@@ -2,10 +2,8 @@ import React from "react";
 import {
   BurgerIcon,
   Button,
-  InfoIcon,
   ListIcon,
   Logo,
-  LogoutIcon,
   ProfileIcon,
 } from "@ya.praktikum/react-developer-burger-ui-components";
 
