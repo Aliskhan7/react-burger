@@ -5,7 +5,7 @@ import {
   Tab,
 } from "@ya.praktikum/react-developer-burger-ui-components";
 
-const BurgerIngredients = (data) => {
+const BurgerIngredients = ({ data }) => {
   const [current, setCurrent] = React.useState("Булки");
   return (
     <div className="mt-10 max-w-[600px]">
@@ -26,7 +26,7 @@ const BurgerIngredients = (data) => {
         </Tab>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 mt-6">
-        {data.data.map((item) => {
+        {data.map((item) => {
           return (
             <div className="flex flex-col items-center text-center relative">
               <Counter count={1} size="small" extraClass="m-1" />
