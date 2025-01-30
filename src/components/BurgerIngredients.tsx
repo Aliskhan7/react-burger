@@ -8,8 +8,7 @@ import {
 const BurgerIngredients = ({ data }) => {
   const [current, setCurrent] = React.useState("Булки");
   return (
-    <div className="mt-10 max-w-[600px]">
-      <h2 className="text-4xl font-bold mb-5">Собери бургер</h2>
+    <div className="max-w-[600px]">
       <div style={{ display: "flex" }}>
         <Tab value="Булки" active={current === "Булки"} onClick={setCurrent}>
           Булки
@@ -25,7 +24,7 @@ const BurgerIngredients = ({ data }) => {
           Начинки
         </Tab>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 mt-6 h-[700px] overflow-y-scroll">
         {data.map((item) => {
           return (
             <div className="flex flex-col items-center text-center relative">
